@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:mainnet": "hardhat run --network arbitrumOne scripts/migrate-erc20.js",
+    "verify:mainnet": "hardhat verify --network arbitrumOne --constructor-args scripts/arguments.js 0xa5B65D58ae6815c59BA006655972094B1Dc93013"
+  },
+  "dependencies": {
+    "@layerzerolabs/lz-evm-oapp-v2": "2.3.29",
+    "@layerzerolabs/lz-evm-protocol-v2": "2.3.29",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomicfoundation/hardhat-verify": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "5.0.2",
+    "@openzeppelin/contracts-upgradeable": "5.0.2",
+    "@openzeppelin/hardhat-upgrades": "^1.17.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.1",
+    "hardhat": "^2.22.3",
+    "hardhat-gas-reporter": "^2.1.1"
+  }
+}
